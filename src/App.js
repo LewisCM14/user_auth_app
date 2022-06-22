@@ -23,7 +23,9 @@ function App() {
     setIsLoggedIn(true);
   };
 
+  // deletes the 'isLoggedIn' key from local storage upon log out
   const logoutHandler = () => {
+    localStorage.removeItem('isLoggedIn'); 
     setIsLoggedIn(false);
   };
 
